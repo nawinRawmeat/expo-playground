@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "newArchEnabled": true,
+    "name": "Thomino's playground",
+    "slug": "thomino-playground",
+    "version": "1.0.0",
+    "runtimeVersion": "1.0.0",
+    "scheme": "thomino-playground",
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "navigationBarColor": "transparent",
+      "navigationBarHidden": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    },
+    "owner": "thomino"
+  }
+}

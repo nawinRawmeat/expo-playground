@@ -1,0 +1,52 @@
+{
+  "name": "master-app",
+  "version": "1.0.0",
+  "scripts": {
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "start": "expo start",
+    "prebuild": "expo prebuild",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" && prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
+    "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "babel-preset-expo": "~13.0.0",
+    "clsx": "^2.1.1",
+    "expo": "53.0.9",
+    "expo-blur": "~14.1.4",
+    "expo-constants": "~17.1.6",
+    "expo-linear-gradient": "~14.1.4",
+    "expo-navigation-bar": "~4.2.4",
+    "expo-router": "~5.0.6",
+    "expo-status-bar": "~2.2.3",
+    "expo-system-ui": "~5.0.7",
+    "lottie-react-native": "7.2.2",
+    "react": "19.0.0",
+    "react-native": "0.79.2",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "^4.10.0",
+    "tailwind-merge": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~19.0.10",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "eslint": "^8.57.0",
+    "eslint-config-universe": "^12.0.1",
+    "nativewind": "^2.0.11",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.3.2",
+    "typescript": "~5.8.3"
+  },
+  "eslintConfig": {
+    "extends": "universe/native",
+    "root": true
+  },
+  "main": "expo-router/entry",
+  "private": true
+}
