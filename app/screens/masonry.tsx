@@ -34,6 +34,7 @@ export default function MasonryScreen() {
         <>
             <Header showBackButton />
             <Animated.ScrollView 
+                showsVerticalScrollIndicator={false}
                 className='px-5 bg-neutral-100 dark:bg-neutral-900'
                 onScroll={Animated.event(
                     [{ nativeEvent: { contentOffset: { y: scrollY } } }],
